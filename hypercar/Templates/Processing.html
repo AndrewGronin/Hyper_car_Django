@@ -1,0 +1,7 @@
+<div>Change oil queue: {{ oil_count }}</div>
+<div>Inflate tires queue: {{ tires_count }}</div>
+<div>Get diagnostic queue: {{ diag_count }}</div>
+
+<form method="post">{% csrf_token %}
+  <button type="submit">Process next</button>
+</form>

@@ -1,0 +1,8 @@
+<h2> Menu </h2>
+<ul>
+  {% for key,val in menu_tabs.items %}
+  <li>
+    <a href="/get_ticket/{{ val }}">{{ key }}</a>
+  </li>
+  {% endfor %}
+</ul>
