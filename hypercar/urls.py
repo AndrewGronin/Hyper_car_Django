@@ -22,11 +22,11 @@ from tickets.views import NextView
 
 
 urlpatterns = [
-    path('welcome', WelcomeView.as_view()),
-    path('menu', MenuView.as_view()),
-    path('get_ticket/diagnostic', QView.as_view()),
-    path('get_ticket/change_oil', QView.as_view()),
-    path('get_ticket/inflate_tires', QView.as_view()),
-    path('processing', ProcessingView.as_view()),
-    path('next', NextView.as_view())
+    path('welcome/', WelcomeView.as_view()),
+    path('menu/', MenuView.as_view()),
+    path('get_ticket/diagnostic/', QView.as_view()),
+    path('get_ticket/change_oil/', QView.as_view()),
+    path('get_ticket/inflate_tires/', QView.as_view()),
+    path('processing/', ProcessingView.as_view()),
+    path('next/', NextView.as_view())
 ]
